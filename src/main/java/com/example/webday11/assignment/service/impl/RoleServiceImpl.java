@@ -20,8 +20,7 @@ public class RoleServiceImpl implements RoleService {
 
 	@Override
 	@Transactional
-	public Role findByRoleName(String name) {
+	public Role findByRoleName(Role name) {
 		return roleRepository.findByRoleName(name);
 	}
-
 }

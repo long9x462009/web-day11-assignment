@@ -22,7 +22,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 	}
 
 	@Override
-	public Role findByRoleName(String name) {
+	public Role findByRoleName(Role name) {
 		Session session = sessionFactory.getCurrentSession();
 		Query<Role> query = session.createQuery("select r from Role r where r.name = '" + name + "'", Role.class);
 		List<Role> resultList = query.getResultList();

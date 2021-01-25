@@ -4,5 +4,5 @@ import com.example.webday11.assignment.entity.Role;
 
 public interface RoleRepository {
 
-	Role findByRoleName(String name);
+	Role findByRoleName(Role name);
 }
